@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+:root {
+  --dark-grey: #1a2a32;
+  --bright-pink: #ff6978;
+  --turquoise: #3cc4bf;
+  --yellow: #f2b147;
+  --light-grey: #d3d3d3;
+  --glaucous: #647aa3;
+
+  --light-lavender: #dfc5fe;
+}
+
+/* General styles */
+
+@media screen and (max-width: 800px) {
+}
+
+img {
+  flex: 1;
+  border-radius: 50%;
+  border: 1px solid black;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+address a:link {
+  text-decoration: dotted;
+  color: var(--light-lavender);
+}
+
+/* List */
+li {
+  list-style: none;
+}
+
+/* Header links */
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+a:hover {
+  color: var(--yellow);
+}
+
+/* Header */
+header {
+  position: relative;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.navBar .links {
+  display: flex;
+  margin: auto;
+  gap: 2rem;
+}
+
+/* body */
+body#home #navHome,
+body#skills #navSkills,
+body#edu #navEdu,
+body#exper #navExper,
+body#inter #navInter {
+  color: #f2b147;
+}
+
+html,
+body {
+  height: 85%;
+  background-color: var(--dark-grey);
+  color: var(--light-grey);
+  font-family: 'Montserrat', sans-serif;
+  max-width: 100%;
+}
+
+/* footer */
+footer {
+  padding-top: 2rem;
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+}
+
+/* About page */
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100%;
+  max-width: 100%;
+}
+
+.basicInfo {
+  display: flex;
+  flex: 0 0 30%;
+  padding: 20px;
+  flex-direction: column;
+  border-right: 1px solid white;
+  align-items: center;
+  text-align: center;
+  height: 90%;
+}
+
+.basicInfo address {
+  text-decoration: underline;
+  color: var(--light-lavender);
+}
+
+.about {
+  display: flex;
+  flex: 0 0 60%;
+  padding: 20px;
+  flex-direction: column;
+
+  height: 90%;
+  width: 100%;
+}
+
+.aboutTitle {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  font-size: 1.7em;
+}
+
+.aboutMe {
+  display: flex;
+  padding-top: 1.7em;
+}
+
+/* Skills Page */
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+}
+
+.infoSkills {
+  flex: 0 0 30%;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Skills */
+.skillPage {
+  flex: 1;
+  padding: 20px;
+}
+
+.progBar {
+  margin-bottom: 10px;
+}
+
+.skillName {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.skillBar {
+  width: 100%;
+  height: 20px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skillPer {
+  height: 100%;
+  width: 0;
+  background-color: #d13639;
+  border-radius: 10px;
+}
+
+/* edu page */
+.edu {
+  display: flex;
+  flex: 0 0 60%;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.eduTitle {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  font-size: 1.7em;
+}
+
+.edu1 {
+  display: flex;
+  width: 100%;
+}
+
+.edu1 p {
+  font-size: small;
+}
+.uni {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  color: darkgrey;
+}
+
+/* experinece page */
+
+.resume {
+  color: var(--light-grey);
+}
+
+.resume a {
+  color: var(--light-lavender);
+  text-decoration: underline;
+}
+
+.experTitle {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  font-size: 1.7em;
+}
+
+.exp {
+  display: flex;
+  flex: 0 0 60%;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.role {
+  display: flex;
+  width: 100%;
+}
+
+.company {
+  display: flex;
+  width: 100%;
+  height: 40%;
+  width: 100%;
+  color: darkgrey;
+}
+
+.role h3:nth-child(2) {
+  display: flex;
+  padding-left: 75%;
+}
+
+.company sub:nth-child(2) {
+  display: flex;
+  padding-left: 75%;
+  color: var(--light-grey);
+}
+
+/* Interest page */
+
+.interests {
+  display: flex;
+  flex: 0 0 60%;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 90%;
+  width: 100%;
+}
+
+.interTitle {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  font-size: 1.7em;
+  padding-bottom: 80px;
+}
+
+.myInter {
+  display: flex;
+  text-align: left;
+  align-content: center;
+  width: 100%;
+  padding: 30px;
+}
+
+.myInter li {
+  list-style: disc;
+  padding-bottom: 15px;
+}
